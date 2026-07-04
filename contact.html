@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Web Course - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== MAIN HEADER & NAVIGATION ==================== -->
+  <header class="site-header">
+    <div class="logo">Bright<span>Course</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+      <!-- Active link is set to "Contact" for this page -->
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main>
+    
+    <!-- Contact Container (Two Columns: Info on left, Form on right) -->
+    <section class="contact-wrapper">
+      
+      <!-- Left Column: School Contact Info Details -->
+      <div class="contact-info">
+        <p class="tag">Contact</p>
+        <h1>Join Our Web Design Class</h1>
+        <p>Send us your information and we will contact you about the next class schedule.</p>
+        
+        <!-- Info boxes showing plain contact information blocks -->
+        <div class="info-box">Email: info@brightcourse.com</div>
+        <div class="info-box">Phone: 012 345 678</div>
+        <div class="info-box">Location: Phnom Penh, Cambodia</div>
+      </div>
+
+      <!-- Right Column: Interactive HTML Form -->
+      <!-- The <form> element allows users to input information and submit it -->
+      <form class="contact-form">
+        <!-- The <label> provides a clickable, visible description for an input element -->
+        <!-- The "for" attribute MUST match the input's "id" attribute to link them together -->
+        <label for="name">Full Name</label>
+        <!-- <input> is a single-line text input field -->
+        <input id="name" type="text" placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email">
+
+        <label for="message">Message</label>
+        <!-- <textarea> is a multi-line input field, perfect for messages and comments -->
+        <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+
+        <!-- Submit button -->
+        <button type="button">Send Message</button>
+      </form>
+      
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <p>&copy; 2026 BrightCourse. Contact us anytime.</p>
+  </footer>
+
+</body>
+</html>

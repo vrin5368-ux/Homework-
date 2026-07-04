@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- The viewport meta tag ensures the website scales correctly on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Web Course - Home</title>
+  <!-- Link to the external CSS stylesheet that styles all pages -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==================== MAIN HEADER & NAVIGATION ==================== -->
+  <!-- The <header> tag represents the top area containing the logo and main navigation menu -->
+  <header class="site-header">
+    <!-- The brand logo. The <span> tag allows us to style "Course" differently from "Bright" in CSS -->
+    <div class="logo">Bright<span>Course</span></div>
+
+    <!-- The <nav> tag holds the navigation links to other pages -->
+    <nav>
+      <!-- The "active" class marks the current page in the menu so it stays highlighted -->
+      <a class="active" href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <!-- The <main> tag contains the primary unique content of the page -->
+  <main>
+
+    <!-- Hero Section (Two-Column Layout) -->
+    <!-- The hero section is the first visual block visitors see. We style it side-by-side using Flexbox -->
+    <section class="hero">
+
+      <!-- Left Column: Heading and Call-to-Action Text -->
+      <div class="hero-text">
+        <p class="tag">Beginner Friendly</p>
+        <h1>Learn Web Design Step by Step</h1>
+        <p class="lead">Start from HTML and CSS, then build beautiful pages for real projects.</p>
+        <a class="button" href="courses.html">View Lessons</a>
+      </div>
+
+      <!-- Right Column: Visual illustration card -->
+      <div class="hero-card">
+        <img src="assets/home-illustration.svg" alt="Student learning web design">
+      </div>
+
+    </section>
+
+    <!-- Features Section (Three-Column Layout) -->
+    <!-- A horizontal row of three benefit cards, styled side-by-side using Flexbox in CSS -->
+    <section class="features">
+
+      <!-- Feature Card 1 -->
+      <div class="feature-card">
+        <h3>Simple Lessons</h3>
+        <p>Easy examples for students who are new to web design.</p>
+      </div>
+
+      <!-- Feature Card 2 -->
+      <div class="feature-card">
+        <h3>Practice Tasks</h3>
+        <p>Small exercises after every topic to improve skill.</p>
+      </div>
+
+      <!-- Feature Card 3 -->
+      <div class="feature-card">
+        <h3>Final Project</h3>
+        <p>Create a complete landing page using only HTML and CSS.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <!-- The <footer> tag is used for the bottom of the page, containing copyright info -->
+  <footer>
+    <p>&copy; 2026 BrightCourse. Build your first website today.</p>
+  </footer>
+
+</body>
+
+</html>
