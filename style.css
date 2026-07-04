@@ -1,0 +1,577 @@
+/* ==========================================================================
+   BRIGHTCOURSE STYLESHEET - STUDENT PRACTICE WORKSHEET
+   This file is organized by section. All style properties have been removed.
+   Your task is to fill in the correct CSS properties based on the comments!
+   ========================================================================== */
+
+/* ==========================================
+   1. RESET & GLOBAL STYLES
+   ========================================== */
+
+/* The '*' selector targets every single HTML element on the page */
+* {
+  /* Hint: Clear default browser spacing outside elements (margin) */
+  margin: 0;
+  /* Hint: Clear default browser spacing inside elements (padding) */
+  padding: 0;
+  /* Hint: Include padding and border in the element's total width and height (box-sizing: border-box) */
+  box-sizing: border-box;
+}
+
+body {
+  /* Hint: Set the font family to 'Arial, sans-serif' */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Hint: Set the background color to a soft light blue/gray (#f6f9ff) */
+  background-color: #f6f9ff;
+  /* Hint: Set the text color to a dark slate (#273449) */
+  color: #273449;
+  /* Hint: Set the line height to 1.6 to control vertical spacing between text lines */
+  line-height: 1.6;
+}
+
+/* Global Heading 1 style, used on multiple pages */
+h1 {
+  /* Hint: Set font size to 46px */
+  font-size: 46px;
+  /* Hint: Set line height to 1.2 */
+  line-height: 1.2;
+  /* Hint: Set text color to a dark charcoal/blue (#17233f) */
+  color: #17233f;
+  /* Hint: Set spacing below the heading (margin-bottom) to 18px */
+  margin-bottom: 18px;
+}
+
+/* Shared tag indicator (small colored subheadings) */
+.tag {
+  /* Hint: Set color to bright brand blue (#2b7cff) */
+  color: #2b7cff;
+  /* Hint: Set font-weight to bold */
+  font-weight: bold;
+  /* Hint: Set space below the tag (margin-bottom) to 10px */
+  margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   2. NAVIGATION HEADER
+   ========================================= */
+
+.site-header {
+  /* Hint: Set background color to white */
+  background-color: white;
+  /* Hint: Activate Flexbox layout (display: flex) */
+  display: flex;
+  /* Hint: Vertically center logo and nav items (align-items: center) */
+  align-items: center;
+  /* Hint: Push logo to left, nav links to right (justify-content: space-between) */
+  justify-content: space-between;
+  /* Hint: Set padding to 18px top/bottom, 8% left/right */
+  padding: 18px 8% 18px 8%;
+  /* Hint: Add a soft shadow beneath the header (box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08)) */
+  box-shadow:  0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  /* Hint: Set font size to 24px */
+  font-size: 24px;
+  /* Hint: Set font weight to bold */
+  font-weight: bold;
+  /* Hint: Set text color to dark indigo (#263a63) */
+  color: (#263a63);
+}
+
+/* Target the span tag inside the logo to color it differently */
+.logo span {
+  /* Hint: Set text color to bright brand blue (#2b7cff) */
+  color: #2b7cff;
+}
+
+/* Style navigation links */
+nav a {
+  /* Hint: Set text color to dark slate (#273449) */
+  color: #273449;
+  /* Hint: Remove the default underline from links (text-decoration: none) */
+  text-decoration: none;
+  /* Hint: Space out links horizontally on the left by 22px (margin-left) */
+  margin-bottom: 22px; 
+  /* Hint: Set font weight to bold */
+  font-weight: bold;
+}
+
+/* Styles links when hovered OR when active (highlighted on current page) */
+nav a:hover,
+nav a.active {
+  /* Hint: Change text color to bright brand blue (#2b7cff) */
+  color: #2b7cff;
+}
+
+
+/* ==========================================
+   3. BUTTON COMPONENTS
+   ========================================== */
+
+/* Shared class for standard action buttons */
+.button {
+  /* Hint: Allow setting margins/paddings like a block, but flow like inline text (display: inline-block) */
+  display: inline-block;
+  /* Hint: Set background color to bright brand blue (#2b7cff) */
+  background-color: #2b7cff;
+  /* Hint: Set text color to white */
+  color: white;
+  /* Hint: Remove text underline (text-decoration: none) */
+  text-decoration: none;
+  /* Hint: Set padding to 13px top/bottom, 25px left/right */
+  padding: 13px top/bottom, 25px left/right ;
+  /* Hint: Round the corners of the button by 8px (border-radius) */
+  border-radius:  8px;
+  /* Hint: Remove border styling (border: none) */
+  border: none;
+  /* Hint: Set font size to 16px */
+  font-size: 16px;
+  /* Hint: Set font weight to bold */
+  font-weight: bold;
+  /* Hint: Show a hand cursor when hovered (cursor: pointer) */
+  cursor: pointer;
+}
+
+/* Hover style for the button */
+.button:hover {
+  /* Hint: Change background color to a darker blue on hover (#175ec9) */
+  background-color: #175ec9;
+}
+
+
+/* ==========================================
+   4. HOME PAGE (Hero & Features Section)
+   ========================================== */
+
+/* Hero container (splits text and image card) */
+.hero {
+  /* Hint: Set minimum height to 520px */
+  min-height: 520px;
+  /* Hint: Activate Flexbox layout (display: flex) */
+  display: flex;
+  /* Hint: Align items vertically in the center (align-items: center) */
+  align-items: center;
+  /* Hint: Push columns to separate sides (justify-content: space-between) */
+  justify-content: space-between;
+  /* Hint: Set padding to 60px top/bottom, 8% left/right */
+  padding: 60px 8%;
+  /* Hint: Add 40px of space between the left and right columns (gap) */
+  gap: 40px;
+}
+
+.hero-text {
+  /* Hint: Let the text container grow/shrink to take up half the space (flex: 1) */
+  flex: 1;
+}
+
+/* Stylized lead paragraph for hero section */
+.lead {
+  /* Hint: Set font size to 18px */
+  font-size: 18px;
+  /* Hint: Set color to cool grey/slate (#596981) */
+  color: #596981;
+  /* Hint: Add margin below the paragraph of 24px */
+  margin: 24px;
+}
+
+/* The box card containing the illustration image */
+.hero-card {
+  /* Hint: Let the card container grow/shrink to take up half the space (flex: 1) */
+  flex: 1;
+  /* Hint: Set background color to white */
+  background-color: white;
+  /* Hint: Round the card corners by 24px (border-radius) */
+  border-radius: 24px;
+  /* Hint: Set padding inside card to 28px */
+  padding: 28px;
+  /* Hint: Add a glowing soft blue shadow (box-shadow: 0 12px 35px rgba(43, 124, 255, 0.15)) */
+  box-shadow: 0 12px 35px rgba(43, 124, 255, 0.15);
+  /* Hint: Center-align all text and images inside the card */
+  text-align: center;
+}
+
+.hero-card img {
+  /* Hint: Scale image width to fill 100% of container */
+  width: 100%;
+  /* Hint: Prevent image from growing wider than 430px (max-width) */
+  max-width: 430px;
+}
+
+/* Features section wrapper */
+.features {
+  /* Hint: Activate Flexbox layout (display: flex) */
+  display: flex;
+  /* Hint: Center the cards horizontally (justify-content: center) */
+  justify-content: center;
+  /* Hint: Set gap between cards to 24px */
+  gap: 24px;
+  /* Hint: Set padding to 20px top, 8% left/right, 70px bottom */
+  padding: 20px 8% 70px 8%;
+}
+
+/* Feature cards */
+.feature-card {
+  /* Hint: Set card width to 31% to fit 3 cards evenly on one line */
+  width: 31%;
+  /* Hint: Set padding inside the card to 28px */
+  padding: 28px;
+  /* Hint: Set background color to white */
+  background-color: white;
+  /* Hint: Round corners by 16px (border-radius) */
+  border-radius: 16px;
+  /* Hint: Add soft grey card shadow (box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08)) */
+ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); 
+}
+
+.feature-card h3 {
+  /* Hint: Set header color to bright brand blue (#2b7cff) */
+  color: #2b7cff;
+  /* Hint: Add space below the heading (margin-bottom) of 10px */
+  margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   5. COURSES PAGE
+   ========================================== */
+
+/* Header section on the Courses page */
+.page-title {
+  /* Hint: Center-align all text */
+  text-align: center;
+  /* Hint: Set padding to 60px top, 20px left/right, 35px bottom */
+  padding: 60px 20px 35px;
+}
+
+.page-title p {
+  /* Hint: Set font size to 18px */
+  font-size: 18px;
+  /* Hint: Set text color to cool grey/slate (#596981) */
+  color: #596981;
+  /* Hint: Add margin below the text of 24px */
+  margin-bottom: 24px;
+}
+
+/* Grid of course cards */
+.course-grid {
+  /* Hint: Activate Flexbox layout (display: flex) */
+  display: flex;
+  /* Hint: Center cards horizontally (justify-content: center) */
+  justify-content: center;
+  /* Hint: Set gap between cards to 24px */
+  gap: 28px;
+  /* Hint: Set padding to 20px top, 8% left/right, 70px bottom */
+  padding: 20px 8% 70px;
+  /* Hint: Allow cards to wrap to the next line on mobile/smaller screens (flex-wrap: wrap) */
+  flex-wrap: wrap;
+}
+
+/* Individual course card styling */
+.course-card {
+  /* Hint: Set fixed width of card to 260px */
+  width: 260px;
+  /* Hint: Set padding inside card to 28px */
+  padding: 28px;
+  /* Hint: Set background color to white */
+  background-color: white;
+  /* Hint: Round card corners by 16px (border-radius) */
+  border-radius: 16px;
+  /* Hint: Add soft grey card shadow (box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08)) */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.course-card h3 {
+  /* Hint: Set heading color to bright brand blue (#2b7cff) */
+  color: #2b7cff;
+  /* Hint: Set margin below heading to 10px */
+  margin: 10px;
+}
+
+/* Small square box displaying course numbers (e.g. 01, 02) */
+.icon-box {
+  /* Hint: Set box width to 54px */
+  width: 54px;
+  /* Hint: Set box height to 54px */
+  height: 54px;
+  /* Hint: Set background color to very soft blue (#eaf2ff) */
+  background-color:#eaf2ff ;
+  /* Hint: Set text color to bright brand blue (#2b7cff) */
+  color: #2b7cff;
+  /* Hint: Round corners by 12px (border-radius) */
+  border-radius: 12px;
+  /* Hint: Center-align text horizontally */
+  text-align: center;
+  /* Hint: Vertically center text by matching line-height to height (54px) */
+  line-height: 54px;
+  /* Hint: Set font-weight to bold */
+  font-weight: bold;
+  /* Hint: Set space below the box (margin-bottom) to 18px */
+  margin-bottom:18px;
+}
+
+
+/* ==========================================
+   6. ABOUT PAGE
+   ========================================== */
+
+/* Layout wrapper on the About page */
+.about-section {
+  /* Hint: Set minimum height to 590px */
+  min-height: 590px;
+  /* Hint: Activate Flexbox layout (display: flex) */
+  display: flex;
+  /* Hint: Center items vertically (align-items: center) */
+  align-items: center;
+  /* Hint: Set gap between columns to 45px */
+  gap: 45px;
+  /* Hint: Set padding to 60px top/bottom, 8% left/right */
+  padding: 60px 8%;
+}
+
+.about-image {
+  /* Hint: Let the image card container grow/shrink to take up half space (flex: 1) */
+  flex:1;
+  /* Hint: Set background color to white */
+  background-color: white;
+  /* Hint: Round corners by 24px (border-radius) */
+  border-radius: 24px;
+  /* Hint: Set padding inside to 28px */
+  padding: 28px;
+  /* Hint: Add soft glowing blue shadow (box-shadow: 0.150 12px 35px rgba(43, 124, 255, )) */
+  box-shadow: 0 0.150 12px 35px rgba(43, 124, 255, 0.15);
+  /* Hint: Center-align content inside */
+  text-align: center;
+}
+
+.about-image img {
+  /* Hint: Scale image to fill 100% of container */
+  width: 100%;
+  /* Hint: Limit image max width to 430px */
+  max-width: 430px;
+}
+
+.about-text {
+  /* Hint: Let the text container grow/shrink to take up half space (flex: 1) */
+  flex: 1;
+}
+
+.about-text p {
+  /* Hint: Set font size to 18px */
+  font-size: 18px;
+  /* Hint: Set color to cool grey/slate (#596981) */
+  color: #596981;
+  /* Hint: Set margin below text to 24px */
+  margin-bottom: 24px;
+}
+
+/* Styling lists inside the about text */
+.about-text ul {
+  /* Hint: Indent list from left by 20px (margin-left) */
+  margin-left: 20px;
+  /* Hint: Set list text color to cool grey/slate (#596981) */
+  color: #596981;
+}
+
+.about-text li {
+  /* Hint: Add space below each list item (margin-bottom) of 10px */
+  margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   7. CONTACT PAGE
+   ========================================== */
+
+/* Layout wrapper on the Contact page */
+.contact-wrapper {
+  /* Hint: Set minimum height to 590px */
+  min-height: 590px;
+  /* Hint: Activate Flexbox layout (display: flex) */
+  display: flex;
+  /* Hint: Align items to top of section (align-items: flex-start) */
+  align-items: flex-start;
+  /* Hint: Set gap between info and form to 45px */
+  gap: 45px;
+  /* Hint: Set padding to 60px top/bottom, 8% left/right */
+  padding: 60px 8%;
+}
+
+.contact-info {
+  /* Hint: Let info container grow/shrink to take up half space (flex: 1) */
+  flex: 1;
+}
+
+.contact-info p {
+  /* Hint: Set font size to 18px */
+  font-size: 18px;
+  /* Hint: Set text color to cool grey/slate (#596981) */
+  color:#596981;
+  /* Hint: Set margin below paragraph to 24px */
+  margin-bottom: 24px;
+}
+
+/* Contact info detail blocks */
+.info-box {
+  /* Hint: Set padding inside box to 16px */
+  padding: 16px;
+  /* Hint: Set space below box (margin-bottom) to 14px */
+  margin-bottom: 14px;
+  /* Hint: Set text color to steel grey (#46566f) */
+  color: #46566f;
+  /* Hint: Set background color to white */
+  background-color: white;
+  /* Hint: Round card corners by 16px (border-radius) */
+  border: 16px;
+  /* Hint: Add soft grey card shadow (box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08)) */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Contact form card styling */
+.contact-form {
+  /* Hint: Let the form container grow/shrink to take up half space (flex: 1) */
+  flex: 1;
+  /* Hint: Set padding inside form to 32px */
+  padding: 32px;
+  /* Hint: Set background color to white */
+  background-color: white;
+  /* Hint: Round form card corners by 16px (border-radius) */
+  border-radius: 16px;
+  /* Hint: Add soft grey card shadow (box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08)) */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form label {
+  /* Hint: Stack labels vertically above their inputs (display: block) */
+  display: block;
+  /* Hint: Make label text bold */
+  font-weight: bold;
+  /* Hint: Add spacing below label (margin-bottom) of 7px */
+  margin-bottom: 7px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  /* Hint: Form fields span 100% width of their container */
+  width: 100%;
+  /* Hint: Set padding inside fields to 13px */
+  padding: 13px;
+  /* Hint: Add spacing below fields (margin-bottom) of 18px */
+  margin-bottom: 18px;
+  /* Hint: Set border to 1px solid light blue/grey (#d4ddec) */
+  border: 1px solid #d4ddec;
+  /* Hint: Round input corners by 8px (border-radius) */
+  border-radius: 8 px;
+  /* Hint: Set font-family to 'Arial, sans-serif' */
+  font-family: Arial,sans-serif;
+  /* Hint: Set font size to 15px */
+  font-size: 15px;
+}
+
+/* Custom textarea adjustments for text input */
+.contact-form textarea {
+  /* Hint: Set starting height of message field to 100px */
+  height: 100px;
+  /* Hint: Allow vertical resizing of textarea, block horizontal (resize: vertical) */
+  resize: vertical;
+}
+
+/* Custom button style specific to the contact form */
+.contact-form button {
+  /* Hint: Make block inline to wrap content and flow naturally (display: inline-block) */
+  display: inline-block;
+  /* Hint: Set background color to bright brand blue (#2b7cff) */
+  background-color: #2b7cff;
+  /* Hint: Set text color to white */
+  color: white;
+  /* Hint: Set padding left/right to 25px */
+  padding: 25px;
+  /* Hint: Set fixed height to 46px */
+  height: 46px;
+  /* Hint: Vertically center text by matching line-height to height (46px) */
+  line-height: 46px;
+  /* Hint: Round button corners by 8px (border-radius) */
+  border-radius: 8px;
+  /* Hint: Remove default border (border: none) */
+  border: none;
+  /* Hint: Set font size to 16px */
+  font-size: 16px;
+  /* Hint: Set font-weight to bold */
+  font-weight: bold;
+  /* Hint: Show hand pointer on hover (cursor: pointer) */
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  /* Hint: Change background color to a darker blue on hover (#175ec9) */
+  background-color: #175ec9;
+}
+
+
+/* ==========================================
+   8. FOOTER
+   ========================================== */
+
+footer {
+  /* Hint: Set background color to dark slate blue (#17233f) */
+  background-color: #17233f;
+  /* Hint: Set text color to white */
+  color: white;
+  /* Hint: Center-align text */
+  text-align: center;
+  /* Hint: Set padding inside footer to 18px */
+  padding: 18PX;
+}
+
+
+/* ==========================================
+   9. RESPONSIVE DESIGN (Media Queries)
+   ========================================== */
+
+/* This rule applies ONLY when the screen size is 768px wide or smaller (like tablet and mobile screens) */
+@media (max-width: 768px) {
+  
+  /* Convert Flex layouts from rows (side-by-side) to columns (stacked) */
+  .site-header,
+  .hero,
+  .about-section,
+  .contact-wrapper,
+  .features {
+    /* Hint: Set flex-direction to column */
+    flex-direction:column;
+    /* Hint: Center-align all text (text-align: center) */
+    text-align: center;
+  }
+
+  /* Spacing and alignments on mobile view */
+  nav {
+    /* Hint: Set top margin to 15px */
+    margin-top: 15px;
+  }
+
+  nav a {
+    /* Hint: Make inline-block to align properly (display: inline-block) */
+    display: inline-block;
+    /* Hint: Set margin spacing to 6px top/bottom, 8px left/right */
+    margin: 6px 8px;
+  }
+
+  h1 {
+    /* Hint: Shrink large mobile heading size to 34px */
+    font-size: 34px;
+  }
+
+  /* Make benefit cards/course cards take up full width of screen on mobile */
+  .feature-card,
+  .course-card {
+    /* Hint: Set width to 100% */
+    width: 100%;
+  }
+
+  /* Align about-text bullets to the left on mobile for better readability */
+  .about-text ul {
+    /* Hint: Set text-alignment to left */
+    text-align: left;
+  }
+}
