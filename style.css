@@ -121,13 +121,13 @@ nav a.active {
   /* Hint: Remove text underline (text-decoration: none) */
   text-decoration: none;
   /* Hint: Set padding to 13px top/bottom, 25px left/right */
-  padding: 30px , 40px  ;
+  padding: 30px  40px  ;
   /* Hint: Round the corners of the button by 8px (border-radius) */
   border-radius:  8px;
   /* Hint: Remove border styling (border: none) */
   border: none;
   /* Hint: Set font size to 16px */
-  font-size: 12px;
+  font-size: 16px;
   /* Hint: Set font weight to bold */
   font-weight: bold;
   /* Hint: Show a hand cursor when hovered (cursor: pointer) */
