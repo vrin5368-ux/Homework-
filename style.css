@@ -121,7 +121,7 @@ nav a.active {
   /* Hint: Remove text underline (text-decoration: none) */
   text-decoration: none;
   /* Hint: Set padding to 13px top/bottom, 25px left/right */
-  padding: 30px  40px  ;
+  padding: 13px  25px  ;
   /* Hint: Round the corners of the button by 8px (border-radius) */
   border-radius:  8px;
   /* Hint: Remove border styling (border: none) */
