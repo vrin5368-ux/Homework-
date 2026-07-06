@@ -93,7 +93,7 @@ nav a {
   /* Hint: Remove the default underline from links (text-decoration: none) */
   text-decoration: none;
   /* Hint: Space out links horizontally on the left by 22px (margin-left) */
-  margin-bottom: 22px; 
+  margin-bottom: 30px; 
   /* Hint: Set font weight to bold */
   font-weight: bold;
 }
