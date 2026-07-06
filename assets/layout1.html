@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout #1</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+     .container {
+        width: 400px;
+        padding: 10px;
+        margin: auto;
+        margin-top: 10px;
+        background-color: green;
+    }
+    .header,
+    .nav,
+    .footer,
+    .section {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color:white;
+        color: black;
+    }
+    .scale {
+        padding: 30px 10px;
+    }
+    
+    .scale {
+        padding: 30px 10px;
+    }
+
+    .article {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        color: white;
+        margin-bottom: 0 0 10px 10px;
+    }
+    .article-header{
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+    }
+     .main {
+        background-color: gainsboro;
+        margin: 10px;
+        color: black;
+        padding: 50px 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Page Header</div>
+        <div class="nav">Nav</div>
+        <div class="article">
+            <div class="artical-header">Article
+               <div class="left-side">
+                <div class="article-header">Article Header</div>
+                <div class="main">Main</div>
+            </div>
+        </div>
+        </div>
+        <div class="section scale">Section</div>
+        <div class="footer">Footer</div>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -93,7 +93,7 @@ nav a {
   /* Hint: Remove the default underline from links (text-decoration: none) */
   text-decoration: none;
   /* Hint: Space out links horizontally on the left by 22px (margin-left) */
-  margin-bottom: 22px; 
+  margin-bottom: 25px; 
   /* Hint: Set font weight to bold */
   font-weight: bold;
 }
@@ -121,7 +121,7 @@ nav a.active {
   /* Hint: Remove text underline (text-decoration: none) */
   text-decoration: none;
   /* Hint: Set padding to 13px top/bottom, 25px left/right */
-  padding: 13px top/bottom, 25px left/right ;
+  padding: 25px , 25px  ;
   /* Hint: Round the corners of the button by 8px (border-radius) */
   border-radius:  8px;
   /* Hint: Remove border styling (border: none) */
@@ -486,7 +486,7 @@ nav a.active {
   /* Hint: Set text color to white */
   color: white;
   /* Hint: Set padding left/right to 25px */
-  padding: 25px;
+  padding: 0 25px;
   /* Hint: Set fixed height to 46px */
   height: 46px;
   /* Hint: Vertically center text by matching line-height to height (46px) */

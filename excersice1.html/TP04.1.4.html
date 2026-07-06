@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+
+<style>
+    body {
+        margin: auto;
+        width: 600px;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 4px black solid;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .parent {
+        width: 200px;
+        height: 200px;
+        background-color: #D9D9D9;
+        padding: 5px;
+        position: relative;
+    }
+
+    .child {
+        width: 200px;
+        height: 50px;
+        background-color: #FF8A00;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .child1 {
+        left: 5px;
+        top: 5px;
+    }
+
+    .child2 {
+        width: 50px;
+        height: 200px;
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .child3 {
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+    }
+     .child4 {
+        width: 50px;
+        height: 200px;
+        bottom: 5px;
+        right: 5px;
+    }
+</style>
+
+<body>
+    <div class="parent parent-1">
+        <div class="child child1">child</div>
+    </div>
+    <div class="parent parent-2">
+        <div class="child child2">child</div>
+    </div>
+    <div class="parent parent-3">
+        <div class="child child3">child</div>
+    </div>
+    <div class="parent parent-4">
+        <div class="child child4">child</div>
+    </div>
+</body>
+
+</html>
